@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Travel for passion | Contact Us</title>
+    <meta
+      name="description"
+      content="Please contact us by filling out this form."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/49864f171b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Passion for Travel</h1>
+      <label for="hamburger-menu"
+        ><i class="fa-solid fa-bars fa-2x hamburger-icon"></i
+      ></label>
+      <input type="checkbox" id="hamburger-menu" />
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog-page.html">Blog page</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container container-large">
+        <h1>Contact Us</h1>
+        <div class="success-message">
+          <div class="container-text">
+            <p>
+              Please fill in the form and we'll get back to you as soon as
+              possible.
+            </p>
+          </div>
+          <form id="contactForm">
+            <div>
+              <label>
+                Name
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Jane Mary Doe"
+                />
+              </label>
+              <div class="error" id="nameError">Name is required.</div>
+            </div>
+            <div>
+              <label>
+                Email
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="janedoe@example.com"
+                />
+              </label>
+              <div class="error" id="emailError">
+                Please enter a valid email address.
+              </div>
+            </div>
+            <div>
+              <label>
+                Subject
+                <textarea
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Write your subject here"
+                ></textarea>
+              </label>
+              <div class="error" id="subjectError">
+                Must have the minimum of 20 characters.
+              </div>
+            </div>
+            <div class="button-wrapper cta-form">
+              <button class="cta">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="js/contact.js" type="module"></script>
+  </body>
+</html>

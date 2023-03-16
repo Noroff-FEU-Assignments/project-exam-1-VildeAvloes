@@ -1,8 +1,86 @@
-h1,
-p {
-  font-family: var(--font);
+* {
+  box-sizing: border-box;
 }
 
-h1 {
-  color: var(--teal-blue);
+main {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+
+nav {
+  display: none;
+  position: absolute;
+  top: 76px;
+  background-color: var(--teal-blue);
+  z-index: 1000;
+  right: 0;
+}
+
+nav li {
+  display: block;
+  padding: 15px 20px;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header,
+footer {
+  background-color: var(--teal-blue);
+  color: white;
+}
+
+@media (min-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 120px;
+  }
+  header label {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    position: static;
+    top: 0px;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 5px 15px;
+  }
+
+  nav ul {
+    padding-left: 3px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
 }
