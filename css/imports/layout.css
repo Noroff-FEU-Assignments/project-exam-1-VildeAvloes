@@ -1,0 +1,8 @@
+h1,
+p {
+  font-family: var(--font);
+}
+
+h1 {
+  color: var(--teal-blue);
+}
