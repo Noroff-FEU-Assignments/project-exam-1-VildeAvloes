@@ -2,8 +2,13 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+
 main {
-  height: 100vh;
+  min-height: 100vh;
+  background-color: var(--beige);
 }
 
 body {
@@ -13,7 +18,7 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   flex: 1;
@@ -22,8 +27,8 @@ header {
 nav {
   display: none;
   position: absolute;
-  top: 76px;
-  background-color: var(--teal-blue);
+  background-color: var(--beige);
+  top: 42px;
   z-index: 1000;
   right: 0;
 }
@@ -39,29 +44,50 @@ nav ul {
 
 #hamburger-menu {
   display: none;
+  margin: 5px;
 }
 
 #hamburger-menu:checked ~ nav {
   display: block;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
+/*General*/
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 700px;
+}
+
+/*Welcome*/
+.welcome-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header,
 footer {
-  background-color: var(--teal-blue);
+  background-color: var(--beige);
   color: white;
 }
 
 @media (min-width: 600px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    height: 120px;
+    justify-content: center;
+    height: 80px;
   }
   header label {
     display: none;
@@ -82,5 +108,9 @@ footer {
     padding-left: 3px;
     margin-top: 1px;
     margin-bottom: 1px;
+  }
+
+  nav a {
+    font-size: 1.2em;
   }
 }

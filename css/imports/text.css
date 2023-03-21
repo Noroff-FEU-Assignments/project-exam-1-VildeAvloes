@@ -2,6 +2,32 @@ body {
   font-family: var(--font);
 }
 
+h1,
 a {
-  color: white;
+  color: #d96d55;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2,
+p {
+  color: var(--green);
+}
+
+a {
+  text-decoration: none;
+}
+nav a {
+  color: var(--orange);
+  font-size: 1em;
+
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media (min-width: 600px) {
+  nav a {
+    font-size: 1.2em;
+  }
 }

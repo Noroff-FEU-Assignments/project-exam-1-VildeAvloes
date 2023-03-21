@@ -1,3 +1,21 @@
-.i {
+.cta {
+  background: var(--green);
   color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 250px;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  border: 2px solid;
+}
+
+.cta:hover {
+  background-color: white;
+  color: var(--green);
+}
+
+.cta-wrapper {
+  margin: 20px;
 }

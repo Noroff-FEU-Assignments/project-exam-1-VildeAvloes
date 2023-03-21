@@ -21,7 +21,6 @@
   </head>
   <body>
     <header>
-      <h1>Passion for Travel</h1>
       <label for="hamburger-menu"
         ><i class="fa-solid fa-bars fa-2x hamburger-icon"></i
       ></label>
@@ -37,59 +36,61 @@
       </nav>
     </header>
     <main>
-      <div class="container container-large">
-        <h1>Contact Us</h1>
-        <div class="success-message">
-          <div class="container-text">
-            <p>
-              Please fill in the form and we'll get back to you as soon as
-              possible.
-            </p>
-          </div>
-          <form id="contactForm">
-            <div>
-              <label>
-                Name
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Jane Mary Doe"
-                />
-              </label>
-              <div class="error" id="nameError">Name is required.</div>
+      <div class="content-wrapper">
+        <h1>Contact Me</h1>
+        <div class="container">
+          <div class="success-message">
+            <div class="container-text">
+              <p>
+                Please fill in the form and I'll get back to you as soon as
+                possible.
+              </p>
             </div>
-            <div>
-              <label>
-                Email
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="janedoe@example.com"
-                />
-              </label>
-              <div class="error" id="emailError">
-                Please enter a valid email address.
+            <form id="contactForm">
+              <div>
+                <label>
+                  Name
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Jane Mary Doe"
+                  />
+                </label>
+                <div class="error" id="nameError">Name is required.</div>
               </div>
-            </div>
-            <div>
-              <label>
-                Subject
-                <textarea
-                  type="text"
-                  name="subject"
-                  id="subject"
-                  placeholder="Write your subject here"
-                ></textarea>
-              </label>
-              <div class="error" id="subjectError">
-                Must have the minimum of 20 characters.
+              <div>
+                <label>
+                  Email
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="janedoe@example.com"
+                  />
+                </label>
+                <div class="error" id="emailError">
+                  Please enter a valid email address.
+                </div>
               </div>
-            </div>
-            <div class="button-wrapper cta-form">
-              <button class="cta">Submit</button>
-            </div>
+              <div>
+                <label>
+                  Subject
+                  <textarea
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Write your subject here"
+                  ></textarea>
+                </label>
+                <div class="error" id="subjectError">
+                  Must have the minimum of 20 characters.
+                </div>
+              </div>
+              <div class="button-wrapper cta-form">
+                <button class="cta">Submit</button>
+              </div>
+      </div>
           </form>
         </div>
       </div>
