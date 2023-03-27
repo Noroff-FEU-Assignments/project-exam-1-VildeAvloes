@@ -1,6 +1,6 @@
 :root {
   --beige: #fff2e7;
-  --orange: #c9654f;
+  --orange: rgb(201, 101, 79);
   --green: #3e593f;
   --beige-opacity: rgb(255, 242, 231, 0.2);
   --font: "Montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
