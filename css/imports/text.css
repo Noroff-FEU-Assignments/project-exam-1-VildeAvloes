@@ -29,6 +29,10 @@ nav a {
   font-weight: bold;
 }
 
+.logo a {
+  margin: none;
+}
+
 @media (min-width: 600px) {
   nav a {
     font-size: 1.2em;

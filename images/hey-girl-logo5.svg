@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 390.88 197.49" style="enable-background:new 0 0 390.88 197.49;" xml:space="preserve">
+	 viewBox="0 0 361.48 163.81" style="enable-background:new 0 0 361.48 163.81;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
 	.st1{fill:#C9644E;}
@@ -13,22 +13,22 @@
 	.st7{font-size:38px;}
 	.st8{fill:#3F593F;}
 	.st9{font-family:'Montserrat-MediumItalic';}
-	.st10{font-size:15px;}
+	.st10{font-size:20px;}
 </style>
-<line class="st0" x1="503.12" y1="346.47" x2="503.12" y2="346.47"/>
+<line class="st0" x1="492.29" y1="328.97" x2="492.29" y2="328.97"/>
 <g>
-	<circle class="st1" cx="100.02" cy="98.59" r="38.5"/>
-	<line class="st2" x1="101.05" y1="55.65" x2="101.05" y2="20"/>
-	<line class="st3" x1="100.02" y1="177.19" x2="100.02" y2="141.53"/>
-	<line class="st2" x1="178.62" y1="98.59" x2="142.96" y2="98.59"/>
-	<line class="st2" x1="57.08" y1="98.59" x2="21.43" y2="98.59"/>
-	<line class="st3" x1="72.78" y1="65.62" x2="51.17" y2="40.31"/>
-	<line class="st2" x1="157.84" y1="40.95" x2="130.18" y2="68"/>
-	<line class="st3" x1="69.69" y1="128.8" x2="44.48" y2="154.01"/>
-	<line class="st2" x1="151.67" y1="158.03" x2="128.52" y2="130.92"/>
-	<circle class="st4" cx="100.02" cy="98.59" r="42.94"/>
+	<circle class="st1" cx="89.19" cy="81.09" r="38.5"/>
+	<line class="st2" x1="90.22" y1="38.15" x2="90.22" y2="2.5"/>
+	<line class="st3" x1="89.19" y1="159.69" x2="89.19" y2="124.03"/>
+	<line class="st2" x1="167.79" y1="81.09" x2="132.13" y2="81.09"/>
+	<line class="st2" x1="46.25" y1="81.09" x2="10.6" y2="81.09"/>
+	<line class="st3" x1="61.95" y1="48.12" x2="40.34" y2="22.81"/>
+	<line class="st2" x1="147.01" y1="23.45" x2="119.35" y2="50.5"/>
+	<line class="st3" x1="58.86" y1="111.3" x2="33.65" y2="136.51"/>
+	<line class="st2" x1="140.84" y1="140.53" x2="117.69" y2="113.41"/>
+	<circle class="st4" cx="89.19" cy="81.09" r="42.94"/>
 </g>
-<rect x="178.62" y="84.33" class="st4" width="193.69" height="67.76"/>
-<text transform="matrix(1 0 0 1 183.5444 112.5302)" class="st5 st6 st7">HEY GIRL</text>
-<text transform="matrix(1 0 0 1 207.2086 128.0329)" class="st8 st9 st10">passion for travel</text>
+<rect x="167.79" y="66.83" class="st4" width="193.69" height="67.76"/>
+<text transform="matrix(1 0 0 1 172.7141 95.0299)" class="st5 st6 st7">HEY GIRL</text>
+<text transform="matrix(1 0 0 1 176.4392 116.0636)" class="st8 st9 st10">passion for travel</text>
 </svg>
