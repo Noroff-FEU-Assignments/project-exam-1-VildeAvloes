@@ -34,7 +34,7 @@ nav {
   display: none;
   position: absolute;
   background-color: var(--beige);
-  top: 133px;
+  top: 115px;
   z-index: 1000;
   right: 0;
 }
