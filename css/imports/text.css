@@ -29,7 +29,13 @@ nav a {
   font-weight: bold;
 }
 
-.logo a {
+nav a:hover,
+nav a:focus,
+.active {
+  color: var(--green);
+}
+
+nav a:focus .logo a {
   margin: none;
 }
 

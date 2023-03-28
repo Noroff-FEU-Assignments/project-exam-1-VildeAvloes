@@ -1,0 +1,38 @@
+form {
+  max-width: 1000px;
+  padding: 10px;
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  text-align: left;
+}
+
+input,
+textarea {
+  min-width: 250px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid black;
+  box-shadow: 1px 1px 8px 1px black;
+}
+
+textarea {
+  display: flex;
+}
+
+input,
+textarea,
+::placeholder {
+  font-family: var(--font);
+}

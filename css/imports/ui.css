@@ -19,3 +19,23 @@
 .cta-wrapper {
   margin: 20px;
 }
+
+/* Message  */
+.error {
+  display: none;
+  color: darkred;
+  font-size: 0.8em;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.message {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
