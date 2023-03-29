@@ -9,3 +9,11 @@ img.logo {
   margin-right: 30px;
   max-height: 110px;
 }
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 30px;
+  justify-content: center;
+}
