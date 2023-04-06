@@ -2,7 +2,16 @@ i {
   color: var(--orange);
 }
 
-i.hamburger-icon {
+i:hover {
+  color: var(--green);
+}
+
+i.fa-bars {
   margin: 5px;
   padding-right: 5px;
+}
+
+.fa-facebook-square,
+.fa-instagram {
+  padding: 0px 5px;
 }

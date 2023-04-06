@@ -7,13 +7,15 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
+const message = document.querySelector("#message");
+const messageError = document.querySelector("#messageError");
 const successMessage = document.querySelector(".success-message");
 
 function validateForm(event) {
   event.preventDefault();
   let success = true;
 
-  if (checkLength(name.value, 0) === true) {
+  if (checkLength(name.value, 4) === true) {
     nameError.style.display = "none";
   } else {
     nameError.style.display = "block";
@@ -25,10 +27,16 @@ function validateForm(event) {
     emailError.style.display = "block";
     success = false;
   }
-  if (checkLength(subject.value, 19) === true) {
+  if (checkLength(subject.value, 14) === true) {
     subjectError.style.display = "none";
   } else {
     subjectError.style.display = "block";
+    success = false;
+  }
+  if (checkLength(message.value, 24) === true) {
+    messageError.style.display = "none";
+  } else {
+    messageError.style.display = "block";
     success = false;
   }
   if (success) {
