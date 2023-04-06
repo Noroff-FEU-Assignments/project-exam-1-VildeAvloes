@@ -25,7 +25,7 @@
           class="logo"
         />
       </a>
-      <label for="hamburger-menu"><i class="fa-solid fa-bars fa-2x"></i></label>
+      <label for="hamburger-menu"></label>
       <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
@@ -55,30 +55,42 @@
           </div>
         </div>
         <div class="image-grid">
-          <img
-            src="./images/index/canal.png"
-            alt="An image of colorful houses next to the canal in Copenhagen. Cars are parked down the street and there are boats parked in the canal."
-          />
-          <img
-            src="./images/index/white-pigeon.png"
-            alt="Image of a dove flying over the blue ocean."
-          />
-          <img
-            src="./images/index/george-washington-bridge.png"
-            alt="Image of a turqoise bridge in between red bricked apartment buildings in New York. The bridge portraited in the picture is the famous George Washington Bridge. "
-          />
-          <img
-            src="./images/index/lighthouse.png"
-            alt="Image of a white an red lighthouse on an island. There is a white house next to the lighthouse. "
-          />
-          <img
-            src="./images/index/waterfalls.png"
-            alt="Image of many waterfalls.  "
-          />
-          <img
-            src="./images/index/waterfalls.png"
-            alt="Image of many waterfalls.  "
-          />
+          <div class="modal-image">
+            <img
+              src="./images/index/canal.png"
+              alt="An image of colorful houses next to the canal in Copenhagen. Cars are parked down the street and there are boats parked in the canal."
+            />
+          </div>
+          <div class="modal-image">
+            <img
+              src="./images/index/white-pigeon.png"
+              alt="Image of a dove flying over the blue ocean."
+            />
+          </div>
+          <div class="modal-image">
+            <img
+              src="./images/index/george-washington-bridge.png"
+              alt="Image of a turqoise bridge in between red bricked apartment buildings in New York. The bridge portraited in the picture is the famous George Washington Bridge. "
+            />
+          </div>
+          <div class="modal-image">
+            <img
+              src="./images/index/lighthouse.png"
+              alt="Image of a white an red lighthouse on an island. There is a white house next to the lighthouse. "
+            />
+          </div>
+          <div class="modal-image">
+            <img
+              src="./images/index/waterfalls.png"
+              alt="Image of many waterfalls.  "
+            />
+          </div>
+          <div class="modal-image">
+            <img
+              src="./images/index/waterfalls.png"
+              alt="Image of many waterfalls.  "
+            />
+          </div>
         </div>
         <h2>Latest Posts</h2>
       </div>
@@ -91,5 +103,12 @@
         <i class="fa-brands fa-facebook-square fa-2x"></i>
       </a>
     </footer>
+    <script src="js/modal.js" type="module"></script>
+    <!-- Modal -->
+    <div id="modalWindow" class="modal">
+      <i class="fas fa-times fa-2x close"></i>
+      <img class="modal-content" />
+      <div class="caption"></div>
+    </div>
   </body>
 </html>
