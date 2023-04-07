@@ -20,13 +20,6 @@ modalImage.forEach((img) => {
   });
 });
 
-//display image and caption in modal
-// image.onclick = function () {
-//   modal.style.display = "block";
-//   modalImg.src = imgSrc;
-//   captionText.innerHTML = caption;
-// };
-
 //close function
 close.onclick = () => {
   modal.style.display = "none";
