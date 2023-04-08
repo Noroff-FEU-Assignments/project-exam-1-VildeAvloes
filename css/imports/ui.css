@@ -41,3 +41,28 @@
   flex-direction: column;
   align-items: center;
 }
+
+/*Loader*/
+.loader {
+  align-items: center;
+  border: 10px solid var(--orange);
+  border-top: 10px solid var(--green);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+  margin-top: 20px;
+}
+
+.results-loader {
+  grid-column-start: 2;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

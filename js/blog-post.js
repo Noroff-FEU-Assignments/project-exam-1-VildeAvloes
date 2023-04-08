@@ -20,8 +20,10 @@ async function getPostDetails() {
     postDetails.innerHTML = "";
 
     titleContainer.innerHTML += `Hey Girl | ${details.title.rendered}`;
-    postDetails.innerHTML = `<h1>${details.title.rendered}</h1>
-                             <p>${details.content.rendered}</p>`;
+    postDetails.innerHTML = `<div class="container content-width"> 
+                                <h1>${details.title.rendered}</h1>
+                                <p>${details.content.rendered}</p>
+                            </div>`;
   } catch (error) {
     console.log(error);
   }

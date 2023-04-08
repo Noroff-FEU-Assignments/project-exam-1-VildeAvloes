@@ -1,7 +1,6 @@
 .card {
   border: 1px dashed var(--green-opacity);
   padding: 20px;
-  margin: 20px;
   cursor: pointer;
 }
 
@@ -15,4 +14,8 @@
 
 .post-header {
   max-width: 750px;
+}
+
+.view-more {
+  margin-top: 20px;
 }

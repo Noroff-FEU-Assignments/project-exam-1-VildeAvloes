@@ -18,19 +18,23 @@ async function renderPosts() {
     postsContainer.innerHTML = "";
 
     firstPostResults.forEach(function (post) {
-      postsContainer.innerHTML += `<div class="card content-width"> 
+      postsContainer.innerHTML += `<div class="container">
+                                    <div class="card content-width"> 
                                     <a href="blog-post.html?id=${post.id}">
                                     <h2>${post.title.rendered}</h2>
                                     <p>${post.excerpt.rendered}</p></a>
+                                </div>
                                 </div>`;
 
-      viewMore.addEventListener("click", (e) =>
+      viewMore.addEventListener("click", () =>
         secondPostResults.forEach(function (post) {
-          postsContainer.innerHTML += `<div class="card content-width"> 
+          postsContainer.innerHTML += `<div class="container">
+                                        <div class="card content-width"> 
                                         <a href="blog-post.html?id=${post.id}">
                                         <h2>${post.title.rendered}</h2>
                                         <p>${post.excerpt.rendered}</p></a>
-                                    </div>`;
+                                       </div>
+                                       </div>`;
         })
       );
     });
@@ -40,3 +44,6 @@ async function renderPosts() {
 }
 
 renderPosts();
+
+// if (postsContainer.innerHTML < 15) {
+//   viewMore.style.display.none;
