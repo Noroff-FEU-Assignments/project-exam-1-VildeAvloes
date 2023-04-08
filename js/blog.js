@@ -13,7 +13,7 @@ async function renderPosts() {
 
     postResults.forEach(function (post) {
       postsContainer.innerHTML += `<div class="card content-width"> 
-                                    <a href="blog-specific?id=${post.id}">
+                                    <a href="blog-post.html?id=${post.id}">
                                     <h2>${post.title.rendered}</h2>
                                     <p>${post.excerpt.rendered}</p></a>
                                 </div>`;

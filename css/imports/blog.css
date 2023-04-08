@@ -1,5 +1,5 @@
 .card {
-  border: 1px solid var(--green-opacity);
+  border: 1px dashed var(--green-opacity);
   padding: 20px;
   margin: 20px;
   cursor: pointer;
@@ -11,4 +11,8 @@
 
 .card:hover {
   color: var(--orange);
+}
+
+.post-header {
+  max-width: 750px;
 }
