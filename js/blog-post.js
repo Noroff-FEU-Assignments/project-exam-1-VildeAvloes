@@ -1,4 +1,4 @@
-import { url } from "./components/constants.js";
+import { blogUrl } from "./components/constants.js";
 
 const titleContainer = document.querySelector("title");
 const postHeader = document.querySelector("h1");
@@ -7,7 +7,7 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const postUrl = url + id;
+const postUrl = blogUrl + id;
 
 console.log(postUrl);
 

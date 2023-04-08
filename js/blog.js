@@ -1,6 +1,7 @@
 import { url } from "./components/constants.js";
 
 const postsContainer = document.querySelector(".blogs-container");
+const viewMore = document.querySelector(".view-more");
 
 async function renderPosts() {
   try {
@@ -9,14 +10,29 @@ async function renderPosts() {
 
     console.log(postResults);
 
+    const firstPostResults = postResults.slice(0, 10);
+    const secondPostResults = postResults.slice(10, 15);
+    console.log(firstPostResults);
+    console.log(secondPostResults);
+
     postsContainer.innerHTML = "";
 
-    postResults.forEach(function (post) {
+    firstPostResults.forEach(function (post) {
       postsContainer.innerHTML += `<div class="card content-width"> 
                                     <a href="blog-post.html?id=${post.id}">
                                     <h2>${post.title.rendered}</h2>
                                     <p>${post.excerpt.rendered}</p></a>
                                 </div>`;
+
+      viewMore.addEventListener("click", (e) =>
+        secondPostResults.forEach(function (post) {
+          postsContainer.innerHTML += `<div class="card content-width"> 
+                                        <a href="blog-post.html?id=${post.id}">
+                                        <h2>${post.title.rendered}</h2>
+                                        <p>${post.excerpt.rendered}</p></a>
+                                    </div>`;
+        })
+      );
     });
   } catch (error) {
     console.log(error);
