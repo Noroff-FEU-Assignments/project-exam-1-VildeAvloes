@@ -1,0 +1,14 @@
+.card {
+  border: 1px solid var(--green-opacity);
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.card p {
+  color: black;
+}
+
+.card:hover {
+  color: var(--orange);
+}

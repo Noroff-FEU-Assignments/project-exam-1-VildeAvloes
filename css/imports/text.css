@@ -23,7 +23,6 @@ a {
 nav a {
   color: var(--orange);
   font-size: 1em;
-
   text-transform: uppercase;
   font-weight: bold;
 }
