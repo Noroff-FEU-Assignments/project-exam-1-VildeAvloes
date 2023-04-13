@@ -12,7 +12,6 @@ modalImage.forEach((img) => {
   img.addEventListener("click", (e) => {
     var imgSrc = e.target.src;
     var caption = e.target.alt;
-    console.log(imgSrc, caption);
 
     modal.style.display = "block";
     modalImg.src = imgSrc;
@@ -20,7 +19,28 @@ modalImage.forEach((img) => {
   });
 });
 
-//close function
+//close by click on x
 close.onclick = () => {
   modal.style.display = "none";
 };
+
+//close by escape
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    modal.style.display = "none";
+  }
+  if (e.key === "Tab") {
+    if (document.activeElement) {
+      console.log("tab");
+      close.focus();
+      e.preventDefault();
+    }
+  }
+});
+
+//close by clicking on modal
+modal.onclick = () => {
+  modal.style.display = "none";
+};
+
+//tab to close
