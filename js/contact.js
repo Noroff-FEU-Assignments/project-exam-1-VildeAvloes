@@ -1,4 +1,5 @@
 import { checkLength, validateEmail } from "./components/globals.js";
+import { displayMessage } from "./components/message.js";
 
 const form = document.querySelector("#contactForm");
 const name = document.querySelector("#name");
@@ -11,8 +12,8 @@ const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 const successMessage = document.querySelector(".success-message");
 
-function validateForm(event) {
-  event.preventDefault();
+function validateForm(e) {
+  e.preventDefault();
   let success = true;
 
   if (checkLength(name.value, 4) === true) {
@@ -42,7 +43,7 @@ function validateForm(event) {
   if (success) {
     successMessage.innerHTML = displayMessage(
       "success",
-      "The form was successfully submitted. We'll be in touch as soon as possible. Have a nice day!"
+      "The form was successfully submitted!"
     );
   }
 }

@@ -22,12 +22,12 @@
   <body>
     <header>
       <a href="index.html"
-      ><img
-        src="images/hey-girl-logo5.svg"
-        alt="Logo of a sun and the saying: Hey Girl"
-        class="logo"
-      />
-    </a>
+        ><img
+          src="images/hey-girl-logo5.svg"
+          alt="Logo of a sun and the saying: Hey Girl"
+          class="logo"
+        />
+      </a>
       <label for="hamburger-menu"
         ><i class="fa-solid fa-bars fa-2x hamburger-icon"></i
       ></label>
@@ -45,78 +45,83 @@
     <main>
       <div class="content-wrapper">
         <h1>Contact Me</h1>
-        <div class="container">
-          <div class="success-message">
-            <div class="container-text">
-              <p>
-                Please fill in the form and I'll get back to you as soon as
-                possible.
-              </p>
+        <div class="container content-width">
+          <div class="success-message"></div>
+          <p>
+            Please fill in the form and I'll get back to you as soon as I can.
+          </p>
+          <form id="contactForm">
+            <div>
+              <label>
+                Name
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Jane Mary Doe"
+                />
+              </label>
+              <div class="error" id="nameError">
+                Should be more than 5 characters long.
+              </div>
             </div>
-            <form id="contactForm">
-              <div>
-                <label>
-                  Name
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Jane Mary Doe"
-                  />
-                </label>
-                <div class="error" id="nameError">Should be more than 5 characters long.</div>
+            <div>
+              <label>
+                Email
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="janedoe@example.com"
+                />
+              </label>
+              <div class="error" id="emailError">
+                Must be a valid email address.
               </div>
-              <div>
-                <label>
-                  Email
-                  <input
-                    type="text"
-                    name="email"
-                    id="email"
-                    placeholder="janedoe@example.com"
-                  />
-                </label>
-                <div class="error" id="emailError">
-                  Must be a valid email address.
-                </div>
+            </div>
+            <div>
+              <label>
+                Subject
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Write your subject here"
+                />
+              </label>
+              <div class="error" id="subjectError">
+                Should be more than 15 characters long.
               </div>
-              <div>
-                <label>
-                  Subject
-                  <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    placeholder="Write your subject here"
-                  ></input>
-                </label>
-                <div class="error" id="subjectError">
-                  Should be more than 15 characters long.
-                </div>
+            </div>
+            <div>
+              <label>
+                Message content
+                <textarea
+                  type="text"
+                  name="message"
+                  id="message"
+                  placeholder="Write your message here"
+                ></textarea>
+              </label>
+              <div class="error" id="messageError">
+                Should be more than 25 characters long.
               </div>
-              <div>
-                <label>
-                  Message content
-                  <textarea
-                    type="text"
-                    name="message"
-                    id="message"
-                    placeholder="Write your message here"
-                  ></textarea>
-                </label>
-                <div class="error" id="messageError">
-                  Should be more than 25 characters long.
-                </div>
-              </div>
-              <div class="cta-wrapper">
-                <button class="cta">Submit</button>
-              </div>
-      </div>
+            </div>
+            <div class="cta-wrapper">
+              <button class="cta">Submit</button>
+            </div>
           </form>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <a href="#" aria-label="Instagram">
+        <i class="fa-brands fa-instagram fa-2x"></i>
+      </a>
+      <a href="#" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-square fa-2x"></i>
+      </a>
+    </footer>
     <script src="js/contact.js" type="module"></script>
   </body>
 </html>

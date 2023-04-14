@@ -24,6 +24,7 @@ async function renderPosts() {
                                     <h2>${post.title.rendered}</h2>
                                     <p>${post.excerpt.rendered}</p></a>
                                 </div>
+                                
                                 </div>`;
 
       viewMore.addEventListener("click", () =>
