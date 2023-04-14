@@ -11,10 +11,14 @@
   border: 2px solid;
 }
 
-.cta:hover,
-.cta:focus {
+.cta:hover {
   background-color: white;
   color: var(--green);
+}
+
+.cta:focus {
+  outline: 1px solid black;
+  box-shadow: 1px 1px 8px 1px black;
 }
 
 .cta-wrapper {
@@ -32,12 +36,8 @@
   text-align: left;
 }
 
-.message {
-  font-size: 0.9em;
-  text-align: center;
-}
-
 .success-message {
+  color: var(--green);
   display: flex;
   flex-direction: column;
   align-items: center;

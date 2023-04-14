@@ -41,10 +41,11 @@ function validateForm(e) {
     success = false;
   }
   if (success) {
-    successMessage.innerHTML = displayMessage(
-      "success",
-      "The form was successfully submitted!"
-    );
+    successMessage.innerHTML =
+      displayMessage("success", "The form was successfully submitted!") +
+      `<div class="cta-wrapper">
+    <a href="index.html" class="cta">Back to home</a>
+  </div> `;
   }
 }
 
