@@ -32,8 +32,8 @@ img.logo {
   transition: 0.2s ease-in-out;
 }
 
-.modal-image img:hover,
-.modal-image img:focus {
+.modal-image-grid img:hover,
+.modal-image-grid img:focus {
   transform: scale(1.1);
 }
 

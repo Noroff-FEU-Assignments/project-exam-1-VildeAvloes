@@ -1,13 +1,12 @@
-import { blogUrl } from "./components/constants.js";
+import { baseUrl } from "./api/url.js";
 
 const titleContainer = document.querySelector("title");
-const postHeader = document.querySelector("h1");
 const postDetails = document.querySelector(".post-details");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const postUrl = blogUrl + id;
+const postUrl = baseUrl + id;
 
 console.log(postUrl);
 
@@ -22,7 +21,9 @@ async function getPostDetails() {
     titleContainer.innerHTML += `Hey Girl | ${details.title.rendered}`;
     postDetails.innerHTML = `<div class="container content-width"> 
                                 <h1>${details.title.rendered}</h1>
+                                <div class="content-width-m"> 
                                 <p>${details.content.rendered}</p>
+                                </div>
                             </div>`;
   } catch (error) {
     console.log(error);

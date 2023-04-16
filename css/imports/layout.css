@@ -73,6 +73,14 @@ nav ul {
   max-width: 800px;
 }
 
+.content-width-m p {
+  max-width: 650px;
+}
+
+.content-width-m img {
+  padding-left: 0;
+}
+
 header,
 footer {
   background-color: var(--beige);
