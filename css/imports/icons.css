@@ -2,7 +2,8 @@ i {
   color: var(--orange);
 }
 
-i:hover {
+i:hover,
+i:focus {
   color: var(--green);
 }
 

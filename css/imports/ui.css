@@ -8,17 +8,19 @@
   max-width: 250px;
   padding: 10px 40px;
   box-sizing: border-box;
+  border: 2px solid var(--green);
 }
 
-.cta:hover {
+.cta:hover,
+.cta:focus {
   background-color: white;
   color: var(--green);
   border: 2px solid var(--green);
 }
 
 .cta:focus {
-  outline: 1px solid black;
-  box-shadow: 1px 1px 8px 1px black;
+  outline: 1px solid var(--green);
+  box-shadow: 1px 1px 8px 1px var(--green);
 }
 
 .cta-wrapper {

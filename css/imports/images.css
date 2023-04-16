@@ -24,4 +24,20 @@ img.logo {
     gap: 15px;
     grid-template-columns: repeat(6, 1fr);
   }
+  .text-image-wrapper-right {
+    display: flex;
+  }
+
+  .text-image-wrapper-left {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .about-image {
+    padding: 20px 5px;
+  }
+
+  .about-image img {
+    object-position: left;
+  }
 }

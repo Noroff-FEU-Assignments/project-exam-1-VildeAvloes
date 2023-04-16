@@ -25,7 +25,7 @@ close.onclick = () => {
 };
 
 //close by escape
-document.addEventListener("keydown", (e) => {
+modal.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     modal.style.display = "none";
   }
@@ -42,5 +42,3 @@ document.addEventListener("keydown", (e) => {
 modal.onclick = () => {
   modal.style.display = "none";
 };
-
-//tab to close

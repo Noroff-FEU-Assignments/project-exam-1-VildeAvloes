@@ -41,28 +41,30 @@
     </header>
     <main>
       <div class="content-wrapper">
-        <h1>About me</h1>
         <div class="container content-width">
+          <h1>About me</h1>
           <h2>Who am I</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            commodi quo labore provident aspernatur, quam mollitia tempore.
-            Quibusdam illum quas blanditiis totam error? Quam sunt saepe
-            expedita libero nostrum inventore!
-          </p>
-          <h3>How it Started</h3>
-          <p>
-            I’ve always been intrigued by the lifestyle of traveling. You know,
-            the people who save up money, quit their jobs and use their savings
-            to travel. I could never dream to quit my job, I’m too afraid.
-            Because traveling is expensive, so either you need to save up money
-            or you need to make a living of your travels. But I do love to
-            travel and I wanted to do more of that. So I began to look into how
-            to combine both, and now I travel a lot more than I did before. On
-            an average I go on 4-6 travels a year now and I get to check off
-            destinations on my bucket list without fear!
-          </p>
-          <h3>How I like to travel</h3>
+          <div class="text-image-wrapper-right">
+            <p class="content-width-s">
+              Hi! My name is Maggie and I work as a full stack developer at a
+              tech firm and I am a part-time traveler and blogger. As a little
+              girl I used to dream about going differnt places all over the
+              world, to see iconic places and experience other cultures.
+              Traveling is expensive, you either need to save up money in
+              advance or you could "simply" make a living of your travels. I do
+              love to travel and I wanted to do more of that, but I love my job,
+              so I didn't want to stop that. So I began to research on how I
+              could combine both, and now I take 4-6 trips a year and I get to
+              check of destinations on my bucket list. How cool is that?
+            </p>
+            <div class="modal-image about-image" tabindex="0">
+              <img
+                src="./images/about/about-maggie.jpg"
+                alt="A photo of a woman with brown hair and a hat holding a camera in front of her face."
+              />
+            </div>
+          </div>
+
           <p>
             I know I just said that traveling is expensive, but it doesn’t have
             to be. And with that being said, it is all about prioritizing. Not
@@ -74,26 +76,27 @@
             other times I’m good with homemade food and staying at low-key
             motels or even outdoors!
           </p>
-          <h3>What I love about traveling</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-            vitae laboriosam. Provident doloribus odit laboriosam quia ducimus
-            tenetur! Aut dolor magnam sint illum similique consequuntur,
-            accusantium illo dolores beatae tenetur!
-          </p>
-          <h2>101 on How to travel</h2>
-          <p>
-            First of all plane-tickets can be really cheap if you have a
-            flexible schedule or order them well ahead of the trip. First of all
-            a google-search goes a long way. By googling you wanted travel you
-            will get a lot of different offers from travel agencies, airlines,
-            bus and train-companies, which makes it easy to compare. There are
-            also sites that you can compare travels routes by price and
-            estimated time. Many airlines have a «low-price»-calendars where you
-            can get very cheap-tickets. Bus and train can have nice prices, you
-            also might be able to travel further for less, so always check out
-            that opportunity!
-          </p>
+          <h2>101 on How to travel in Maggie Style</h2>
+          <div class="text-image-wrapper-left">
+            <p class="content-width-s">
+              First of all plane-tickets can be really cheap if you have a
+              flexible schedule or order them well ahead of the trip. First of
+              all a google-search goes a long way. By googling you wanted travel
+              you will get a lot of different offers from travel agencies,
+              airlines, bus and train-companies, which makes it easy to compare.
+              There are also sites that you can compare travels routes by price
+              and estimated time. Many airlines have a «low-price»-calendars
+              where you can get very cheap-tickets. Bus and train can have nice
+              prices, you also might be able to travel further for less, so
+              always check out that opportunity!
+            </p>
+            <div class="modal-image about-image" tabindex="0">
+              <img
+                src="./images/about/about-maggie2.jpg"
+                alt="A photo of a girl with half long brown hair in a beige trenchcoat holding an umbrella while looking down a street."
+              />
+            </div>
+          </div>
           <h3>Where to stay</h3>
           <p>
             Research your stay in advance. There are many options as hotels,
@@ -129,5 +132,14 @@
         <i class="fa-brands fa-facebook-square fa-2x"></i>
       </a>
     </footer>
+    <script src="js/modal.js" type="module"></script>
+    <!-- Modal -->
+    <div id="modalWindow" class="modal">
+      <i class="fas fa-times fa-2x close" type="button"></i>
+      <div class="modal-content-wrapper">
+        <img class="modal-content" />
+        <div class="caption"></div>
+      </div>
+    </div>
   </body>
 </html>

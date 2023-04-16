@@ -70,8 +70,9 @@ nav ul {
 }
 
 .content-width {
-  max-width: 750px;
+  max-width: 800px;
 }
+
 header,
 footer {
   background-color: var(--beige);
@@ -113,5 +114,9 @@ footer {
 
   nav a {
     font-size: 1.2em;
+  }
+
+  .content-width-s {
+    max-width: 400px;
   }
 }
