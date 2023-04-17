@@ -10,14 +10,14 @@ async function renderPosts() {
 
     console.log(postResults);
 
-    // const firstPostResults = postResults.slice(0, 10);
-    // const secondPostResults = postResults.slice(10, 15);
-    // console.log(firstPostResults);
-    // console.log(secondPostResults);
+    const firstPostResults = postResults.slice(0, 10);
+    const secondPostResults = postResults.slice(-5);
+    console.log(firstPostResults);
+    console.log(secondPostResults);
 
     postsContainer.innerHTML = "";
 
-    postResults.forEach(function (post) {
+    firstPostResults.forEach(function (post) {
       postsContainer.innerHTML += `<a href="blog-post.html?id=${post.id}" class="card content-width">
                                       <div class="featured-image">
                                       <img src= "${post.fimg_url}" />
@@ -27,19 +27,20 @@ async function renderPosts() {
                                       <p>${post.excerpt.rendered}</p>
                                       </div>
                                       </a>`;
-
-      viewMore.addEventListener("click", () =>
-        postResults.forEach(function (post) {
-          viewMore.style.display = "none";
-          // postsContainer.innerHTML += `<div class="container">
-          //                               <div class="card content-width">
-          //                               <a href="blog-post.html?id=${post.id}">
-          //                               <h2>${post.title.rendered}</h2>
-          //                               <p>${post.excerpt.rendered}</p></a>
-          //                               </div>
-          //                               </div>`;
-        })
-      );
+    });
+    viewMore.addEventListener("click", () => {
+      viewMore.style.display = "none";
+      secondPostResults.forEach(function (post) {
+        postsContainer.innerHTML += `<a href="blog-post.html?id=${post.id}" class="card content-width">
+                                          <div class="featured-image">
+                                          <img src= "${post.fimg_url}" />
+                                          </div>
+                                          <div>
+                                          <h2>${post.title.rendered}</h2>
+                                          <p>${post.excerpt.rendered}</p>
+                                          </div>
+                                          </a>`;
+      });
     });
   } catch (error) {
     console.log(error);

@@ -1,4 +1,5 @@
 import { baseUrl } from "./api/url.js";
+import { createModal } from "./modal.js";
 
 const titleContainer = document.querySelector("title");
 const postDetails = document.querySelector(".post-details");
@@ -25,12 +26,14 @@ async function getPostDetails() {
                                 <p>${details.content.rendered}</p>
                                 </div>
                             </div>`;
+
+    const images = document.querySelectorAll(".wp-block-image");
+    images.forEach((img) => {
+      img.classList.add("modal-image");
+    });
   } catch (error) {
     console.log(error);
   }
 }
 
 getPostDetails();
-
-const image = postDetails.querySelector("img");
-console.log(image);

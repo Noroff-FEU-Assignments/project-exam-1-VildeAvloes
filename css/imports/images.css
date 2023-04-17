@@ -119,8 +119,4 @@ img.logo {
   .about-image {
     padding: 20px 5px;
   }
-
-  .about-image img {
-    object-position: left;
-  }
 }
