@@ -67,18 +67,11 @@ nav ul {
   align-items: center;
   background-color: white;
   padding: 30px;
+  max-width: 690px;
 }
 
 .content-width {
-  max-width: 800px;
-}
-
-.content-width-m p {
-  max-width: 650px;
-}
-
-.content-width-m img {
-  padding-left: 0;
+  max-width: 700px;
 }
 
 header,
@@ -111,7 +104,7 @@ footer {
 
   nav li {
     display: inline-block;
-    padding: 5px 15px;
+    padding: 5px 10px;
   }
 
   nav ul {

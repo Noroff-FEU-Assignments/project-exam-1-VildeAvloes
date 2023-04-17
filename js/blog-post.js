@@ -19,9 +19,9 @@ async function getPostDetails() {
     postDetails.innerHTML = "";
 
     titleContainer.innerHTML += `Hey Girl | ${details.title.rendered}`;
-    postDetails.innerHTML = `<div class="container content-width"> 
+    postDetails.innerHTML = `<div class="container content-width">
                                 <h1>${details.title.rendered}</h1>
-                                <div class="content-width-m"> 
+                                <div class="content-width-m">
                                 <p>${details.content.rendered}</p>
                                 </div>
                             </div>`;
@@ -31,3 +31,6 @@ async function getPostDetails() {
 }
 
 getPostDetails();
+
+const image = postDetails.querySelector("img");
+console.log(image);

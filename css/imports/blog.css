@@ -1,7 +1,11 @@
 .card {
   border: 1px dashed var(--green-opacity);
   padding: 20px;
+  margin: 20px 0px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card p {
@@ -18,4 +22,25 @@
 
 .view-more {
   margin-top: 20px;
+}
+
+@media (min-width: 600px) {
+  .blogs-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 800px) {
+  .blogs-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+
+    flex-direction: row-reverse;
+  }
 }
