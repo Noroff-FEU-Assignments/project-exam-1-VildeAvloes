@@ -56,15 +56,17 @@ img.logo {
 }
 
 .modal-content {
-  margin: auto;
+  position: absolute;
+  z-index: 2000;
+  margin: 0;
   display: block;
   width: 80%;
   max-width: 700px;
 }
 
 .modal-content-wrapper {
-  position: relative;
-  z-index: 2000;
+  display: flex;
+  justify-content: center;
 }
 
 .modal-content,
@@ -83,7 +85,6 @@ img.logo {
 }
 
 .modal img {
-  width: 50%;
   object-fit: cover;
 }
 

@@ -1,12 +1,13 @@
 //fetch imagesrc
 export function createModal() {
   const modal = document.querySelector(".modal");
+  const modalId = document.getElementById("#modal");
   const close = document.getElementsByClassName("close")[0];
-  let image = document.querySelector(".modal-image");
+  // let image = document.querySelector(".modal-image");
   let modalImage = document.querySelectorAll(".modal-image img");
-  let modalImg = document.querySelector(".modal-content");
-  let imgSrc;
-  let imgAlt;
+  let modalContent = document.querySelector(".modal-content");
+  // let imgSrc;
+  // let imgAlt;
 
   modalImage.forEach((img) => {
     img.addEventListener("click", (e) => {
@@ -14,11 +15,15 @@ export function createModal() {
       let imgAlt = e.target.alt;
 
       modal.style.display = "block";
-      modalImg.src = imgSrc;
-      modalImg.alt = imgAlt;
+      modalContent.src = imgSrc;
+      modalContent.alt = imgAlt;
     });
     close.onclick = () => {
       modal.style.display = "none";
+    };
+    document.onclick = (e) => {
+      if (e.target.id === modalId) modal.style.display = "none";
+      console.log(e.target);
     };
     modal.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
@@ -34,9 +39,6 @@ export function createModal() {
         }
       }
     });
-    modal.onclick = () => {
-      modal.style.display = "none";
-    };
   });
 }
 createModal();
