@@ -30,6 +30,7 @@ async function getPostDetails() {
     const images = document.querySelectorAll(".wp-block-image");
     images.forEach((img) => {
       img.classList.add("modal-image");
+      window.onclick = (e) => createModal();
     });
   } catch (error) {
     console.log(error);
