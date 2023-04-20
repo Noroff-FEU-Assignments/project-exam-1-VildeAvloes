@@ -19,6 +19,7 @@ body {
 
 header {
   display: flex;
+  position: fixed;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -30,15 +31,14 @@ header {
 .nav-menu {
   position: fixed;
   background-color: var(--beige);
-  left: 100%;
+  right: -100%;
   top: 93px;
   z-index: 1000;
-  right: 0;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .nav-menu.active {
-  left: 0;
+  right: 0;
 }
 
 nav li {
@@ -53,6 +53,8 @@ nav ul {
 .hamburger {
   display: block;
   cursor: pointer;
+  border: none;
+  background: var(--beige);
 }
 
 .hamburger-icon {
