@@ -1,7 +1,6 @@
 //fetch imagesrc
 export function createModal() {
   const modal = document.querySelector(".modal");
-  const close = document.getElementsByClassName("close")[0];
   let modalImage = document.querySelectorAll(".modal-image img");
   let modalContent = document.querySelector(".modal-content");
 

@@ -16,6 +16,7 @@
   background-color: white;
   color: var(--green);
   border: 2px solid var(--green);
+  transition: 0.7s ease;
 }
 
 .cta:focus {
