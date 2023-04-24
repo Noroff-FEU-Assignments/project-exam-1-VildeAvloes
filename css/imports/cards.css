@@ -22,14 +22,14 @@
 .card:focus,
 .card-slide:hover,
 .card-slide:focus {
-  /* border: 1px solid var(--green-opacity);
-  box-shadow: 1px 1px 8px 1px var(--green); */
-  transform: scale(1.1);
-  transition: 0.7 ease;
+  border: 1px solid var(--green-opacity);
+  box-shadow: 1px 1px 8px 1px var(--green);
+  /* transform: scale(1.1);
+  transition: 0.7 ease; */
 }
 
 .card-slide {
-  margin: 0px 10px;
+  margin: 0px 20px;
   width: 250px;
   height: 250px;
   padding: 10px;
@@ -54,7 +54,7 @@
   display: flex;
   flex-direction: row;
   width: calc(100% / 3);
-  justify-content: center;
+  position: relative;
 }
 
 .slide-image img {
@@ -70,9 +70,27 @@
 }
 
 .slider-wrapper {
-  max-width: 840px;
+  max-width: 830px;
   cursor: pointer;
   overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.slider-wrapper button {
+  position: absolute;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#prev-button {
+  left: -5px;
+}
+
+#next-button {
+  right: -5px;
 }
 
 @media (min-width: 600px) {
