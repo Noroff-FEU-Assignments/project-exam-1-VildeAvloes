@@ -93,9 +93,17 @@
             />
           </div>
         </div>
-        <div class="container">
+        <div class="container container-large">
           <h2>Latest Posts</h2>
-          <div class="card-container"></div>
+          <div class="slider-wrapper">
+            <ul class="slider"></ul>
+            <button class="slide-button" id="prev-button">
+              <i class="fa-solid fa-2x fa-angle-left"></i>
+            </button>
+            <button class="slide-button" id="next-button">
+              <i class="fa-solid fa-2x fa-angle-right"></i>
+            </button>
+          </div>
         </div>
       </div>
     </main>
@@ -108,6 +116,7 @@
       </a>
     </footer>
     <script src="js/script.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
     <script src="js/modal.js" type="module"></script>
     <!-- Modal -->
     <div class="modal" role="dialog">

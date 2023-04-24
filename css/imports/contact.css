@@ -1,5 +1,4 @@
 form {
-  padding: 10px;
   margin: 0px 20px;
   display: flex;
   flex-direction: column;
@@ -38,6 +37,12 @@ input,
 textarea,
 ::placeholder {
   font-family: var(--font);
+}
+
+@media (min-width: 400px) {
+  form {
+    padding: 10px;
+  }
 }
 
 @media (min-width: 800px) {

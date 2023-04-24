@@ -1,6 +1,3 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+import { hamburgerMenu } from "./components/hamburger.js";
 
-hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-});
+hamburgerMenu();

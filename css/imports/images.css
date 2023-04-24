@@ -34,7 +34,7 @@ img.logo {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .modal-image-grid img:hover,
@@ -69,8 +69,7 @@ img.logo {
   justify-content: center;
 }
 
-.modal-content,
-.caption {
+.modal-content {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -88,21 +87,6 @@ img.logo {
   object-fit: cover;
 }
 
-.close {
-  color: white;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 20px;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-.close:hover,
-.close:focus {
-  color: var(--orange);
-}
-
 @media (min-width: 800px) {
   .image-grid {
     gap: 15px;
@@ -118,6 +102,6 @@ img.logo {
   }
 
   .about-image {
-    padding: 20px 5px;
+    margin: 20px 10px;
   }
 }

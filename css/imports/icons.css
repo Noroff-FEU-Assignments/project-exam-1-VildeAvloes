@@ -5,6 +5,7 @@ i {
 
 i:hover {
   color: var(--green);
+  font-size: 2.1em;
 }
 
 i.fa-bars {

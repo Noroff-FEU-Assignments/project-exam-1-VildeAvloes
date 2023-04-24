@@ -23,7 +23,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 110px;
+  height: 120px;
   width: 100%;
   flex: 1;
 }
@@ -32,7 +32,7 @@ header {
   position: fixed;
   background-color: var(--beige);
   right: -100%;
-  top: 93px;
+  top: 100px;
   z-index: 1000;
   transition: 0.5s;
 }
@@ -41,24 +41,16 @@ header {
   right: 0;
 }
 
-nav li {
+li {
   display: block;
+}
+
+nav li {
   padding: 15px 20px;
 }
 
 nav ul {
   padding: 0px;
-}
-
-.hamburger {
-  display: block;
-  cursor: pointer;
-  border: none;
-  background: var(--beige);
-}
-
-.hamburger-icon {
-  transition: 0.1s ease-in-out;
 }
 
 /*General*/
@@ -76,6 +68,11 @@ nav ul {
   background-color: white;
   padding: 30px;
   max-width: 690px;
+  margin-top: 60px;
+}
+
+.container-large {
+  max-width: 900px;
 }
 
 .content-width {
@@ -97,7 +94,6 @@ footer {
 @media (min-width: 800px) {
   .hamburger {
     display: none;
-    cursor: pointer;
   }
 
   header {
