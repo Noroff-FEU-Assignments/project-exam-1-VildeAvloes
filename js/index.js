@@ -6,8 +6,6 @@ const nextButton = document.getElementById("next-button");
 const mediumScreen = window.matchMedia("(min-width: 700px");
 const largeScreen = window.matchMedia("(min-width: 1000px");
 
-const mediaQuery = window.matchMedia("(min-width: 768px)");
-
 async function renderSlider() {
   try {
     const response = await fetch(url);
@@ -29,33 +27,37 @@ async function renderSlider() {
                                       </li>`;
     });
 
-    const cardSlide = document.querySelector(".card-wrapper");
-
-    nextButton.addEventListener("click", () => {
-      const slideWidth = cardSlide.clientWidth;
-      if (mediumScreen.matches) {
-        slider.scrollLeft += slideWidth * 2;
-      }
-      if (largeScreen.matches) {
-        slider.scrollLeft += slideWidth * 3;
-      } else {
-        slider.scrollLeft += slideWidth;
-      }
-    });
-    prevButton.addEventListener("click", () => {
-      const slideWidth = cardSlide.clientWidth;
-      if (mediumScreen.matches) {
-        slider.scrollLeft -= slideWidth * 2;
-      }
-      if (largeScreen.matches) {
-        slider.scrollLeft -= slideWidth * 3;
-      } else {
-        slider.scrollLeft -= slideWidth;
-      }
-    });
+    handleButtonOnClick();
   } catch (error) {
     console.log(error);
   }
 }
 
 renderSlider();
+
+const handleButtonOnClick = () => {
+  const cardSlide = document.querySelector(".card-wrapper");
+
+  nextButton.addEventListener("click", () => {
+    const slideWidth = cardSlide.clientWidth;
+    if (mediumScreen.matches) {
+      slider.scrollLeft += slideWidth * 2;
+    }
+    if (largeScreen.matches) {
+      slider.scrollLeft += slideWidth * 3;
+    } else {
+      slider.scrollLeft += slideWidth;
+    }
+  });
+  prevButton.addEventListener("click", () => {
+    const slideWidth = cardSlide.clientWidth;
+    if (mediumScreen.matches) {
+      slider.scrollLeft -= slideWidth * 2;
+    }
+    if (largeScreen.matches) {
+      slider.scrollLeft -= slideWidth * 3;
+    } else {
+      slider.scrollLeft -= slideWidth;
+    }
+  });
+};
