@@ -1,19 +1,32 @@
 i {
-  color: var(--orange);
+  color: var(--green);
   transition: 0.3s ease;
+  font-size: 2em;
 }
 
 i:hover {
-  color: var(--green);
-  font-size: 2.1em;
+  color: var(--orange);
+  transform: scale(1.1);
 }
 
-i.fa-bars {
+.fa-bars {
+  color: var(--orange);
   margin: 5px;
-  padding-right: 5px;
+  padding: 5px 0px;
+}
+
+.fa-bars:hover {
+  color: var(--green);
 }
 
 .fa-facebook-square,
 .fa-instagram {
   padding: 0px 5px;
+}
+
+@media (min-width: 800px) {
+  .fa-facebook-square,
+  .fa-instagram {
+    font-size: 3em;
+  }
 }
