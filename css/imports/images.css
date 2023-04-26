@@ -75,6 +75,10 @@ img.logo {
   animation-duration: 0.6s;
 }
 
+.logo img {
+  font-family: var(--font);
+}
+
 @keyframes zoom {
   from {
     transform: scale(0);
