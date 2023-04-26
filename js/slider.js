@@ -6,7 +6,7 @@ const nextButton = document.getElementById("next-button");
 const mediumScreen = window.matchMedia("(min-width: 700px");
 const largeScreen = window.matchMedia("(min-width: 1000px");
 
-async function renderSlider() {
+export async function renderSlider() {
   try {
     const response = await fetch(url);
     const results = await response.json();
@@ -20,7 +20,7 @@ async function renderSlider() {
                                       <div class="slide-title">
                                       <h3>${slide.title.rendered}</h3>
                                       </div>
-                                      <div class="slide-image">
+                                      <div class="card-image">
                                       <img src= "${slide.fimg_url}" />
                                       </div>
                                       </a>

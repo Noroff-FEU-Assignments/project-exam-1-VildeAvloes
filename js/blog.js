@@ -19,7 +19,7 @@ async function renderPosts() {
 
     firstPostResults.forEach(function (post) {
       postsContainer.innerHTML += `<a href="blog-post.html?id=${post.id}" class="card content-width">
-                                      <div class="featured-image">
+                                      <div class="card-image">
                                       <img src= "${post.fimg_url}" />
                                       </div>
                                       <div>
@@ -32,7 +32,7 @@ async function renderPosts() {
       viewMore.style.display = "none";
       secondPostResults.forEach(function (post) {
         postsContainer.innerHTML += `<a href="blog-post.html?id=${post.id}" class="card content-width">
-                                          <div class="featured-image">
+                                          <div class="card-image">
                                           <img src= "${post.fimg_url}" />
                                           </div>
                                           <div>

@@ -1,3 +1,5 @@
+/*Buttons*/
+
 button {
   display: block;
   cursor: pointer;
@@ -35,6 +37,33 @@ button {
   display: flex;
   justify-content: center;
   margin: 20px;
+}
+
+/*Icons*/
+i {
+  color: var(--green);
+  transition: 0.3s ease;
+  font-size: 2em;
+}
+
+i:hover {
+  color: var(--orange);
+  transform: scale(1.1);
+}
+
+.fa-bars {
+  color: var(--orange);
+  margin: 5px;
+  padding: 5px 0px;
+}
+
+.fa-bars:hover {
+  color: var(--green);
+}
+
+.fa-facebook-square,
+.fa-instagram {
+  padding: 0px 5px;
 }
 
 /* Message  */
@@ -75,5 +104,12 @@ button {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 800px) {
+  .fa-facebook-square,
+  .fa-instagram {
+    font-size: 3em;
   }
 }
