@@ -22,7 +22,7 @@
 .card-slide:hover,
 .card-slide:focus {
   border: 1px solid var(--green-opacity);
-  box-shadow: 1px 1px 8px 1px var(--green);
+  box-shadow: 1px 1px 8px 1px var(--green-opacity);
   /* transform: scale(1.1);
   transition: 0.7 ease; */
 }
