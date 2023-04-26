@@ -3,7 +3,7 @@ import { url } from "./api/url.js";
 const postsContainer = document.querySelector(".blogs-container");
 const viewMore = document.querySelector(".view-more");
 
-async function renderPosts() {
+export async function renderPosts() {
   try {
     const response = await fetch(url);
     const postResults = await response.json();

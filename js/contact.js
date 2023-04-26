@@ -12,7 +12,7 @@ const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 const successMessage = document.querySelector(".success-message");
 
-function validateForm(e) {
+export function validateForm(e) {
   e.preventDefault();
   let success = true;
 

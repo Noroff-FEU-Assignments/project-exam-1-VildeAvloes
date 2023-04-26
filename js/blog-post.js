@@ -11,7 +11,7 @@ const postUrl = baseUrl + id;
 
 console.log(postUrl);
 
-async function getPostDetails() {
+export async function getPostDetails() {
   try {
     const response = await fetch(postUrl);
     const details = await response.json();
