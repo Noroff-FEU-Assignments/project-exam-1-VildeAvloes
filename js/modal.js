@@ -16,11 +16,9 @@ export function createModal() {
     modal.onclick = (e) => {
       if (e.target === modal) modal.style.display = "none";
     };
-    modal.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        console.log("esc");
+    window.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
         modal.style.display = "none";
-        e.preventDefault();
       }
     });
   });
