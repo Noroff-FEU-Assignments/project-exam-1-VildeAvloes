@@ -13,6 +13,10 @@
   margin: 20px 0px;
 }
 
+.card h2 {
+  max-width: 360px;
+}
+
 .card p {
   color: black;
 }

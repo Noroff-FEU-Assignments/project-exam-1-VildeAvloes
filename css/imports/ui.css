@@ -39,6 +39,12 @@ button {
   margin: 20px;
 }
 
+.close-button {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 5px;
+}
+
 /*Icons*/
 i {
   color: var(--green);
@@ -64,6 +70,10 @@ i:hover {
 .fa-facebook-square,
 .fa-instagram {
   padding: 0px 5px;
+}
+
+.close-button i {
+  color: white;
 }
 
 /* Message  */
@@ -106,4 +116,3 @@ i:hover {
     transform: rotate(360deg);
   }
 }
-

@@ -18,7 +18,7 @@ export async function renderPosts() {
     postsContainer.innerHTML = "";
 
     firstPostResults.forEach(function (post) {
-      postsContainer.innerHTML += `<a href="blog-post.html?id=${post.id}" class="card content-width">
+      postsContainer.innerHTML += `<a href="blog-post.html?id=${post.id}" class="card">
                                       <div class="card-image">
                                       <img src= "${post.fimg_url}" />
                                       </div>
@@ -31,7 +31,7 @@ export async function renderPosts() {
     viewMore.addEventListener("click", () => {
       viewMore.style.display = "none";
       secondPostResults.forEach(function (post) {
-        postsContainer.innerHTML += `<a href="blog-post.html?id=${post.id}" class="card content-width">
+        postsContainer.innerHTML += `<a href="blog-post.html?id=${post.id}" class="card">
                                           <div class="card-image">
                                           <img src= "${post.fimg_url}" />
                                           </div>
