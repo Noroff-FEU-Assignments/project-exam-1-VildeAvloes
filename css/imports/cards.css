@@ -1,6 +1,5 @@
 .card,
 .card-slide {
-  border: 1px dashed var(--green-opacity);
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -9,6 +8,7 @@
 }
 
 .card {
+  border: 1px dashed var(--green-opacity);
   padding: 20px;
   margin: 20px 0px;
 }
@@ -111,6 +111,10 @@
 @media (min-width: 700px) {
   .slider-content {
     max-width: 510px;
+  }
+
+  .card-slide {
+    border: 1px dashed var(--green-opacity);
   }
 }
 
