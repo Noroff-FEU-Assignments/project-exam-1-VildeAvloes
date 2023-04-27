@@ -62,7 +62,7 @@ h1 {
 
 h2,
 h3,
-footer a {
+footer p {
   color: var(--green);
 }
 
@@ -93,19 +93,23 @@ nav a:focus .logo a {
   margin: none;
 }
 
-footer a {
-  text-transform: uppercase;
-  font-weight: bold;
+header,
+footer {
+  background-color: var(--beige);
+  color: white;
+}
+
+footer p {
+  margin: 0px;
 }
 
 footer a:hover {
   color: var(--orange);
 }
 
-header,
-footer {
-  background-color: var(--beige);
-  color: white;
+.some-text p {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 footer {

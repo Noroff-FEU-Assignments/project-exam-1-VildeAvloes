@@ -21,7 +21,7 @@ export async function renderSlider() {
                                       <h3>${slide.title.rendered}</h3>
                                       </div>
                                       <div class="card-image">
-                                      <img src= "${slide.fimg_url}" />
+                                      <img src= "${slide.fimg_url}" alt=""/>
                                       </div>
                                       </a>
                                       </li>`;
