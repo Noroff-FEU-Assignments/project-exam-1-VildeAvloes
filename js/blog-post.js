@@ -9,14 +9,10 @@ const id = params.get("id");
 
 const postUrl = baseUrl + id;
 
-console.log(postUrl);
-
 export async function getPostDetails() {
   try {
     const response = await fetch(postUrl);
     const details = await response.json();
-
-    console.log(details);
     postDetails.innerHTML = "";
 
     titleContainer.innerHTML += `Hey Girl | ${details.title.rendered}`;

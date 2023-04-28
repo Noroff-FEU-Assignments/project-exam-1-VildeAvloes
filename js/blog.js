@@ -8,12 +8,8 @@ export async function renderPosts() {
     const response = await fetch(url);
     const postResults = await response.json();
 
-    console.log(postResults);
-
     const firstPostResults = postResults.slice(0, 10);
     const secondPostResults = postResults.slice(-5);
-    console.log(firstPostResults);
-    console.log(secondPostResults);
 
     postsContainer.innerHTML = "";
 

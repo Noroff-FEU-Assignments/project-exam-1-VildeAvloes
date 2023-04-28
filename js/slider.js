@@ -11,8 +11,6 @@ export async function renderSlider() {
     const response = await fetch(url);
     const results = await response.json();
 
-    console.log(results);
-
     slider.innerHTML = "";
 
     results.forEach(function (slide) {
@@ -26,6 +24,15 @@ export async function renderSlider() {
                                       </a>
                                       </li>`;
     });
+
+    // slider.addEventListener("scroll", (e) => {
+    //   if (slider.scrollLeft === 0) {
+    //     console.log("scrollLeft");
+    //   }
+    //   if (slider.scrollLeft === 100) {
+    //     console.log("scrollRight");
+    //   }
+    // });
 
     handleButtonOnClick();
   } catch (error) {
