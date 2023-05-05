@@ -39,13 +39,11 @@ button {
   margin: 20px;
 }
 
-.close-button {
-  display: flex;
-  flex-direction: row-reverse;
+.close-button-wrapper {
   padding: 5px;
   position: absolute;
-  right: 1em;
-  top: 1em;
+  right: 5px;
+  top: 5px;
 }
 
 .inactive-button {
@@ -59,7 +57,8 @@ i {
   font-size: 2em;
 }
 
-i:hover {
+i:hover,
+#close-button i:hover {
   color: var(--orange);
   transform: scale(1.1);
 }
@@ -79,7 +78,7 @@ i:hover {
   padding: 0px 5px;
 }
 
-.close-button i {
+#close-button i {
   color: white;
 }
 

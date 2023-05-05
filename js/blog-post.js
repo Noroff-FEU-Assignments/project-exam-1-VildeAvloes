@@ -15,6 +15,7 @@ export async function getPostDetails() {
     const details = await response.json();
     postDetails.innerHTML = "";
 
+    console.log(details);
     titleContainer.innerHTML += `Hey Girl | ${details.title.rendered}`;
     postDetails.innerHTML = `<div class="container content-width">
                                 <h1>${details.title.rendered}</h1>
