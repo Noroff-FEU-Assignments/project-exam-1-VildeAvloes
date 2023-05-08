@@ -46,10 +46,6 @@ button {
   top: 5px;
 }
 
-.inactive-button {
-  color: var(--green-opacity);
-}
-
 /*Icons*/
 i {
   color: var(--green);

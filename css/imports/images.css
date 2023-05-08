@@ -74,8 +74,8 @@ img.logo {
   animation-duration: 0.6s;
 }
 
-.logo img {
-  font-family: var(--font);
+.modal img {
+  object-fit: cover;
 }
 
 @keyframes zoom {
@@ -85,10 +85,6 @@ img.logo {
   to {
     transform: scale(1);
   }
-}
-
-.modal img {
-  object-fit: cover;
 }
 
 @media (min-width: 700px) {

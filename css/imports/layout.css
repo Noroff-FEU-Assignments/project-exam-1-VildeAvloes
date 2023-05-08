@@ -8,6 +8,11 @@ main {
   margin: 0px;
 }
 
+.logo img {
+  font-family: var(--font);
+  height: 100%;
+}
+
 header {
   display: flex;
   position: fixed;
