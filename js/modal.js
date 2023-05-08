@@ -14,18 +14,17 @@ export function createModal() {
       modalContent.src = imgSrc;
       modalContent.alt = imgAlt;
     });
-    // img.addEventListener("keydown", (e) => {
-    //   if (e.key === "Enter") {
-    //     e.preventDefault();
-    //     let imgSrc = e.target.src;
-    //     let imgAlt = e.target.alt;
+    img.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        let imgSrc = e.target.src;
+        let imgAlt = e.target.alt;
 
-    //     modal.style.display = "block";
-    //     modalContent.src = imgSrc;
-    //     modalContent.alt = imgAlt;
-    //     console.log("enter");
-    //   }
-    // });
+        modal.style.display = "block";
+        modalContent.src = imgSrc;
+        modalContent.alt = imgAlt;
+      }
+    });
     modal.onclick = (e) => {
       if (e.target === modal) modal.style.display = "none";
     };

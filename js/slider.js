@@ -6,7 +6,7 @@ const nextButton = document.getElementById("next-button");
 const mediumScreen = window.matchMedia("(min-width: 700px");
 const largeScreen = window.matchMedia("(min-width: 1000px");
 
-export async function renderSlider() {
+async function renderSlider() {
   try {
     const response = await fetch(url);
     const results = await response.json();
@@ -24,16 +24,6 @@ export async function renderSlider() {
                                       </a>
                                       </li>`;
     });
-
-    // slider.addEventListener("scroll", (e) => {
-    //   if (slider.scrollLeft === 0) {
-    //     console.log("scrollLeft");
-    //   }
-    //   if (slider.scrollLeft === 100) {
-    //     console.log("scrollRight");
-    //   }
-    // });
-
     handleButtonOnClick();
   } catch (error) {
     console.log(error);

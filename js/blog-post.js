@@ -27,7 +27,13 @@ export async function getPostDetails() {
     const images = document.querySelectorAll(".wp-block-image");
     images.forEach((img) => {
       img.classList.add("modal-image");
-      window.onclick = (e) => createModal();
+      window.onclick = () => createModal();
+    });
+
+    const innerImg = document.querySelectorAll(".wp-block-image img");
+    innerImg.forEach((img) => {
+      img.setAttribute("tabindex", "0");
+      window.onkeydown = () => createModal();
     });
   } catch (error) {
     console.log(error);
