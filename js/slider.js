@@ -11,19 +11,22 @@ async function renderSlider() {
     const response = await fetch(url);
     const results = await response.json();
 
+    console.log(results);
     slider.innerHTML = "";
 
     results.forEach(function (slide) {
-      slider.innerHTML += `<li class="card-wrapper"> <a href="blog-post.html?id=${slide.id}" class="card-slide">
-                                      <div class="slide-title">
-                                      <h3>${slide.title.rendered}</h3>
-                                      </div>
-                                      <div class="card-image">
-                                      <img src= "${slide.fimg_url}" alt=""/>
-                                      </div>
-                                      </a>
-                                      </li>`;
+      slider.innerHTML += `<li class="card-wrapper">
+                              <a href="blog-post.html?id=${slide.id}" class="card-slide">
+                                <div class="slide-title">
+                                  <h3>${slide.title.rendered}</h3>
+                                  </div>
+                                  <div class="card-image">
+                                  <img src= "${slide.fimg_url}" alt=""/>
+                                </div>
+                              </a>
+                            </li>`;
     });
+
     handleButtonOnClick();
   } catch (error) {
     console.log(error);
@@ -34,9 +37,9 @@ renderSlider();
 
 const handleButtonOnClick = () => {
   const cardSlide = document.querySelector(".card-wrapper");
+  const slideWidth = cardSlide.clientWidth;
 
   nextButton.addEventListener("click", () => {
-    const slideWidth = cardSlide.clientWidth;
     if (mediumScreen.matches) {
       slider.scrollLeft += slideWidth * 2;
     }
@@ -47,7 +50,6 @@ const handleButtonOnClick = () => {
     }
   });
   prevButton.addEventListener("click", () => {
-    const slideWidth = cardSlide.clientWidth;
     if (mediumScreen.matches) {
       slider.scrollLeft -= slideWidth * 2;
     }
