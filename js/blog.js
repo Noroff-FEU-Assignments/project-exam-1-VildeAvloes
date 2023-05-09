@@ -2,6 +2,7 @@ import { url } from "./api/url.js";
 
 const postsContainer = document.querySelector(".blogs-container");
 const viewMore = document.querySelector(".view-more");
+const searchButton = document.querySelector(".search-button");
 
 export async function renderPosts() {
   try {
@@ -44,3 +45,12 @@ export async function renderPosts() {
 }
 
 renderPosts();
+
+// let title = ${post.title.rendered};
+// function checkTitle (title) {
+//   console.log(title)
+// }
+
+// searchButton.onclick = function filterPosts() {
+//   const filteredPosts = postResults.filter(checkTitle);
+// };
