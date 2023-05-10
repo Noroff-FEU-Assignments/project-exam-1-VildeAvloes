@@ -4,54 +4,43 @@ const postsContainer = document.querySelector(".blogs-container");
 const viewMore = document.querySelector(".view-more");
 const sortButton = document.querySelector(".sort-button");
 
-export async function renderPosts() {
+fetchPosts();
+export async function fetchPosts() {
   try {
     const response = await fetch(url);
     const postResults = await response.json();
+    let offset = 10;
 
-    const firstPostResults = postResults.slice(0, 10);
-    const secondPostResults = postResults.slice(-5);
-
-    console.log(postResults);
-
-    postsContainer.innerHTML = "";
-
-    sortButton.addEventListener("click", () => {
-      const sortedResults = postResults.sort(sortByTitle);
-      console.log(sortedResults);
-    });
-
-    firstPostResults.forEach(function (post) {
-      postsContainer.innerHTML += `<a href="blog-post.html?id=${post.id}" class="card">
-                                      <div class="card-image">
-                                      <img src= "${post.fimg_url}" />
-                                      </div>
-                                      <div>
-                                      <h2>${post.title.rendered}</h2>
-                                      <p>${post.excerpt.rendered}</p>
-                                      </div>
-                                      </a>`;
-    });
     viewMore.addEventListener("click", () => {
       viewMore.style.display = "none";
-      secondPostResults.forEach(function (post) {
+      postResults.slice(offset, offset + 5).forEach(function (post) {
         postsContainer.innerHTML += `<a href="blog-post.html?id=${post.id}" class="card">
-                                          <div class="card-image">
-                                          <img src= "${post.fimg_url}" />
-                                          </div>
-                                          <div>
-                                          <h2>${post.title.rendered}</h2>
-                                          <p>${post.excerpt.rendered}</p>
-                                          </div>
-                                          </a>`;
+                                        <div class="card-image">
+                                        <img src= "${post.fimg_url}" />
+                                        </div>
+                                        <div>
+                                        <h2>${post.title.rendered}</h2>
+                                        <p>${post.excerpt.rendered}</p>
+                                        </div>
+                                        </a>`;
       });
+      offset += 5;
     });
+
+    sortButton.addEventListener("click", () => {
+      sortButton.classList.add("disabled");
+      sortButton.disabled = true;
+      const sortedResults = postResults.sort(sortByTitle).slice(0, offset);
+      updatePosts(sortedResults);
+    });
+
+    clearPosts();
+
+    updatePosts(postResults.slice(0, offset));
   } catch (error) {
     console.log(error);
   }
 }
-
-renderPosts();
 
 function sortByTitle(a, b) {
   if (a.title.rendered > b.title.rendered) {
@@ -63,9 +52,21 @@ function sortByTitle(a, b) {
   }
 }
 
-// const handleSortingButtonOnClick = () => {
-//   sortButton.addEventListener("click", () => {
-//     const sortedResults = postResults.sort(sortByTitle);
-//     console.log(sortedResults);
-//   });
-// };
+const updatePosts = (postResults) => {
+  clearPosts();
+  postResults.forEach(function (post) {
+    postsContainer.innerHTML += `<a href="blog-post.html?id=${post.id}" class="card">
+                                    <div class="card-image">
+                                    <img src= "${post.fimg_url}" />
+                                    </div>
+                                    <div>
+                                    <h2>${post.title.rendered}</h2>
+                                    <p>${post.excerpt.rendered}</p>
+                                    </div>
+                                    </a>`;
+  });
+};
+
+const clearPosts = () => {
+  postsContainer.innerHTML = "";
+};

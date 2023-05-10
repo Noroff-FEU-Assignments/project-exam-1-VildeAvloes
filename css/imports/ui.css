@@ -46,6 +46,23 @@ button {
   top: 5px;
 }
 
+.sort-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.disabled i {
+  color: var(--green-opacity);
+}
+
+.disabled i:hover,
+.disabled i:focus {
+  transform: none;
+  transition: none;
+  color: var(--green-opacity);
+  cursor: default;
+}
 /*Icons*/
 i {
   color: var(--green);

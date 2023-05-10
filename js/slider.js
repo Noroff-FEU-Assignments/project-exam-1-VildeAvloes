@@ -6,6 +6,7 @@ const nextButton = document.getElementById("next-button");
 const mediumScreen = window.matchMedia("(min-width: 700px");
 const largeScreen = window.matchMedia("(min-width: 1000px");
 
+renderSlider();
 async function renderSlider() {
   try {
     const response = await fetch(url);
@@ -14,6 +15,7 @@ async function renderSlider() {
     console.log(results);
     slider.innerHTML = "";
 
+    handleDisabledButton();
     results.forEach(function (slide) {
       slider.innerHTML += `<li class="card-wrapper">
                               <a href="blog-post.html?id=${slide.id}" class="card-slide">
@@ -32,8 +34,6 @@ async function renderSlider() {
     console.log(error);
   }
 }
-
-renderSlider();
 
 const handleButtonOnClick = () => {
   const cardSlide = document.querySelector(".card-wrapper");
@@ -58,5 +58,19 @@ const handleButtonOnClick = () => {
     } else {
       slider.scrollLeft -= slideWidth;
     }
+  });
+};
+
+const handleDisabledButton = () => {
+  slider.addEventListener("scroll", () => {
+    if (slider.scrollLeft >= 10) {
+      prevButton.classList.add("disabled");
+      prevButton.disabled = true;
+    }
+    if (slider.scrollLeft <= 3000) {
+      nextButton.classList.add("disabled");
+      nextButton.disabled = true;
+    }
+    console.log(slider.scrollLeft);
   });
 };
