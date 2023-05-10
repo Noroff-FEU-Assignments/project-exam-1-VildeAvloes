@@ -63,13 +63,21 @@ const handleButtonOnClick = () => {
 
 const handleDisabledButton = () => {
   slider.addEventListener("scroll", () => {
-    if (slider.scrollLeft >= 10) {
+    if (slider.scrollLeft <= "10") {
       prevButton.classList.add("disabled");
       prevButton.disabled = true;
     }
-    if (slider.scrollLeft <= 3000) {
+    if (slider.scrollLeft >= "10") {
+      prevButton.classList.remove("disabled");
+      prevButton.disabled = false;
+    }
+    if (slider.scrollLeft >= "3000") {
       nextButton.classList.add("disabled");
       nextButton.disabled = true;
+    }
+    if (slider.scrollLeft <= "3000") {
+      nextButton.classList.remove("disabled");
+      nextButton.disabled = false;
     }
     console.log(slider.scrollLeft);
   });

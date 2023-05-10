@@ -105,7 +105,6 @@ i:hover,
 }
 
 .success-message {
-  color: var(--green);
   display: flex;
   flex-direction: column;
   align-items: center;

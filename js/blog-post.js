@@ -8,6 +8,8 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const postUrl = baseUrl + id;
 
+getPostDetails();
+
 async function getPostDetails() {
   try {
     const response = await fetch(postUrl);
@@ -23,22 +25,24 @@ async function getPostDetails() {
                                 </div>
                             </div>`;
 
-    const images = document.querySelectorAll(".wp-block-image");
-
-    images.forEach((img) => {
-      img.classList.add("modal-image");
-      window.onclick = () => createModal();
-    });
-
-    const innerImg = document.querySelectorAll(".wp-block-image img");
-
-    innerImg.forEach((img) => {
-      img.setAttribute("tabindex", "0");
-      window.onkeydown = () => createModal();
-    });
+    handleModalImages();
   } catch (error) {
     console.log(error);
   }
 }
 
-getPostDetails();
+const handleModalImages = () => {
+  const images = document.querySelectorAll(".wp-block-image");
+
+  images.forEach((img) => {
+    img.classList.add("modal-image");
+    window.onclick = () => createModal();
+  });
+
+  const innerImg = document.querySelectorAll(".wp-block-image img");
+
+  innerImg.forEach((img) => {
+    img.setAttribute("tabindex", "0");
+    window.onkeydown = () => createModal();
+  });
+};

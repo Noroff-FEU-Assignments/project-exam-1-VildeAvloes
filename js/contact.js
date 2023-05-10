@@ -1,4 +1,4 @@
-import { checkLength, validateEmail } from "./components/globals.js";
+import { checkLength, validateEmail } from "./components/validation.js";
 import { displayMessage } from "./components/message.js";
 
 const form = document.querySelector("#contactForm");
