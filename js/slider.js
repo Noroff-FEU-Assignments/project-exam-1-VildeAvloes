@@ -71,14 +71,33 @@ const handleDisabledButton = () => {
       prevButton.classList.remove("disabled");
       prevButton.disabled = false;
     }
-    if (slider.scrollLeft >= "3000") {
+    if (slider.scrollLeft >= "3500") {
       nextButton.classList.add("disabled");
       nextButton.disabled = true;
     }
-    if (slider.scrollLeft <= "3000") {
+    if (slider.scrollLeft <= "3500") {
       nextButton.classList.remove("disabled");
       nextButton.disabled = false;
     }
-    console.log(slider.scrollLeft);
+    if (mediumScreen.matches) {
+      if (slider.scrollLeft >= "3250") {
+        nextButton.classList.add("disabled");
+        nextButton.disabled = true;
+      }
+      if (slider.scrollLeft <= "3250") {
+        nextButton.classList.remove("disabled");
+        nextButton.disabled = false;
+      }
+    }
+    if (largeScreen.matches) {
+      if (slider.scrollLeft >= "3000") {
+        nextButton.classList.add("disabled");
+        nextButton.disabled = true;
+      }
+      if (slider.scrollLeft <= "3000") {
+        nextButton.classList.remove("disabled");
+        nextButton.disabled = false;
+      }
+    }
   });
 };
