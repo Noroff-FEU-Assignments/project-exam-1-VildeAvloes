@@ -18,9 +18,9 @@ async function getPostDetails() {
     postDetails.innerHTML = "";
 
     titleContainer.innerHTML += `Hey Girl | ${details.title.rendered}`;
-    postDetails.innerHTML = `<div class="container content-width">
+    postDetails.innerHTML = `<div class="container ">
                                 <h1>${details.title.rendered}</h1>
-                                <div class="content-width">
+                                <div>
                                 <p>${details.content.rendered}</p>
                                 </div>
                             </div>`;

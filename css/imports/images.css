@@ -28,6 +28,7 @@ img.logo {
 .modal-image {
   cursor: pointer;
   overflow: hidden;
+  margin: 0px;
 }
 
 .modal-image img {
@@ -92,7 +93,7 @@ img.logo {
 
 @media (min-width: 700px) {
   .modal {
-    padding-top: 100px;
+    padding-top: 150px;
   }
 }
 

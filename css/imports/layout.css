@@ -67,12 +67,14 @@ a {
 h1 {
   font-size: 1.6em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 h2,
 h3,
 footer p {
   color: var(--green);
+  text-align: center;
 }
 
 a {
@@ -154,22 +156,6 @@ footer {
 .container-slider {
   max-width: 1000px;
   padding: 10px;
-}
-
-.content-width {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content-width h1 {
-  margin-bottom: 0px;
-  max-width: 350px;
-}
-
-.content-width h1,
-.content-width p {
-  max-width: 560px;
 }
 
 @media (min-width: 600px) {
