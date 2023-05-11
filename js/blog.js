@@ -28,10 +28,14 @@ export async function fetchPosts() {
     });
 
     sortButton.addEventListener("click", () => {
-      sortButton.classList.add("disabled");
-      sortButton.disabled = true;
-      const sortedResults = postResults.sort(sortByTitle).slice(0, offset);
-      updatePosts(sortedResults);
+      const sortedResults = [...postResults].sort(sortByTitle).slice(0, offset);
+      sortButton.classList.toggle("active");
+
+      if (sortButton.classList.contains("active")) {
+        updatePosts(sortedResults);
+      } else {
+        updatePosts(postResults.slice(0, offset));
+      }
     });
 
     clearPosts();
@@ -42,7 +46,7 @@ export async function fetchPosts() {
   }
 }
 
-function sortByTitle(a, b) {
+const sortByTitle = (a, b) => {
   if (a.title.rendered > b.title.rendered) {
     return 1;
   } else if (b.title.rendered > a.title.rendered) {
@@ -50,7 +54,7 @@ function sortByTitle(a, b) {
   } else {
     return 0;
   }
-}
+};
 
 const updatePosts = (postResults) => {
   clearPosts();

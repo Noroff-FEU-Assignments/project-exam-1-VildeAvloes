@@ -63,6 +63,15 @@ button {
   color: var(--green-opacity);
   cursor: default;
 }
+
+.active i {
+  color: var(--orange);
+}
+
+.active i:hover,
+.active i:focus {
+  color: var(--green);
+}
 /*Icons*/
 i {
   color: var(--green);
