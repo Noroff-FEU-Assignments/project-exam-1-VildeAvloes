@@ -33,8 +33,10 @@ export async function fetchPosts() {
 
       if (sortButton.classList.contains("active")) {
         updatePosts(sortedResults);
+        sortButton.ariaPressed = "true";
       } else {
         updatePosts(postResults.slice(0, offset));
+        sortButton.ariaPressed = "false";
       }
     });
 
