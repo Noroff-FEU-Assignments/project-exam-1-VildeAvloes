@@ -1,4 +1,3 @@
-//fetch imagesrc
 export function createModal() {
   const modal = document.querySelector(".modal");
   const closeButton = document.getElementById("close-button");

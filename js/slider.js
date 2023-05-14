@@ -1,4 +1,4 @@
-import { url } from "./api/url.js";
+import { url } from "./constants/url.js";
 
 const slider = document.querySelector(".slider");
 const prevButton = document.getElementById("prev-button");
@@ -12,7 +12,6 @@ async function renderSlider() {
     const response = await fetch(url);
     const results = await response.json();
 
-    console.log(results);
     slider.innerHTML = "";
 
     handleDisabledButton();

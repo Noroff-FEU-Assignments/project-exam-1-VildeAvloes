@@ -1,4 +1,4 @@
-import { url } from "./api/url.js";
+import { url } from "./constants/api.js";
 
 const postsContainer = document.querySelector(".blogs-container");
 const viewMore = document.querySelector(".view-more");

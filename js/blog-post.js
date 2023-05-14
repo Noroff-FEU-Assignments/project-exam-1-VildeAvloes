@@ -1,4 +1,4 @@
-import { baseUrl } from "./api/url.js";
+import { baseUrl } from "./constants/api.js";
 import { createModal } from "./modal.js";
 
 const titleContainer = document.querySelector("title");
@@ -19,7 +19,7 @@ async function getPostDetails() {
 
     titleContainer.innerHTML += `Hey Girl | ${details.title.rendered}`;
     postDetails.innerHTML = `<div class="container ">
-                                <h1>${details.title.rendered}</h1>
+                                <h1 class="blog-post">${details.title.rendered}</h1>
                                 <div>
                                 <p>${details.content.rendered}</p>
                                 </div>
