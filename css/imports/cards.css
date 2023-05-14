@@ -28,8 +28,6 @@
 .card-slide:focus {
   border: 1px solid var(--green-opacity);
   box-shadow: 1px 1px 8px 1px var(--green-opacity);
-  /* transform: scale(1.1);
-  transition: 0.7 ease; */
 }
 
 .card-slide {
@@ -106,10 +104,9 @@
 }
 
 @media (min-width: 600px) {
-  .blogs-container {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 
@@ -120,18 +117,6 @@
 
   .card-slide {
     border: 1px dashed var(--green-opacity);
-  }
-}
-
-@media (min-width: 800px) {
-  .blogs-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: row-reverse;
   }
 }
 
