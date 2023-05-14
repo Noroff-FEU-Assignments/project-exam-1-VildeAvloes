@@ -1,4 +1,4 @@
-import { url } from "./constants/api";
+import { url } from "./constants/api.js";
 
 const slider = document.querySelector(".slider");
 const prevButton = document.getElementById("prev-button");

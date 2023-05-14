@@ -11,10 +11,12 @@ export async function fetchPosts() {
     const postResults = await response.json();
     let offset = 10;
 
+    console.log(url);
+
     viewMore.addEventListener("click", () => {
       viewMore.style.display = "none";
       postResults.slice(offset, offset + 5).forEach(function (post) {
-        postsContainer.innerHTML += `<a href="blog-post.html?id=${post.id}" class="card">
+        postsContainer.innerHTML += `<li><a href="blog-post.html?id=${post.id}" class="card">
                                         <div class="card-image">
                                         <img src= "${post.fimg_url}" />
                                         </div>
@@ -22,7 +24,7 @@ export async function fetchPosts() {
                                         <h2>${post.title.rendered}</h2>
                                         <p>${post.excerpt.rendered}</p>
                                         </div>
-                                        </a>`;
+                                        </a></li>`;
       });
       offset += 5;
     });
