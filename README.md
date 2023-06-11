@@ -1,5 +1,5 @@
 # Hey Girl
-## *Cross Course Project*
+## *Project Exam 1*
 ![A screenshot of the front page of hey girl. The site has a picture from the canal in Paris and a nav bar on top of the page.](./images/Hey-Girl.png)
 
 ## Description
