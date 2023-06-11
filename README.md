@@ -10,6 +10,7 @@ The aim for this project was to show my skills in:
 - CSS
 - JavaScript
 - Wordpress REST API 
+- Accessibility
 
 
 *Built With*
